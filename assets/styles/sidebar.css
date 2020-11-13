@@ -1,0 +1,61 @@
+.width-with-title {
+    @apply w-56;
+}
+
+.width-without-title {
+    @apply w-12;
+}
+
+.sidebar {
+    @apply width-without-title h-full bg-gray-800 text-gray-300;
+    transition: 0.5s;
+}
+
+.sidebar.closed {
+    @apply w-1;
+}
+
+.sidebar ul {
+    @apply width-without-title;
+}
+
+.sidebar ul li a {
+    @apply px-1 py-3 block text-center;
+}
+
+.sidebar ul li a:hover {
+    @apply bg-gray-900;
+}
+
+.sidebar ul li a .icon {
+    @apply px-2;
+}
+
+.sidebar ul li .title {
+    @apply py-2 px-6 text-gray-500 text-xs hidden;
+}
+
+.sidebar ul li a.active {
+    @apply bg-gray-900 border-green-300 border-solid border-l-4;
+}
+
+.sidebar .logo {
+    @apply width-without-title text-center py-4;
+}
+
+@screen sm {
+
+    .sidebar,
+    .sidebar ul,
+    .sidebar .logo {
+        @apply width-with-title;
+    }
+
+    .sidebar ul li .title {
+        @apply block;
+    }
+
+    .sidebar ul li a {
+        @apply px-4 text-left;
+    }
+}

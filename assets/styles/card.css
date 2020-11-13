@@ -1,0 +1,30 @@
+.card {
+    @apply border rounded text-gray-700 mb-3;
+}
+
+.card-text {
+    @apply mb-3;
+}
+
+.card-title {
+    @apply mb-3 text-lg font-semibold;
+}
+
+.card-header,
+.card-footer {
+    @apply bg-gray-300;
+}
+
+.card-header,
+.card-body,
+.card-footer {
+    @apply py-3 px-4;
+}
+
+.card-body {
+    @apply pb-4 bg-gray-100;
+}
+
+.card-footer {
+    @apply text-xs;
+}

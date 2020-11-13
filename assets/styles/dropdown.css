@@ -1,0 +1,29 @@
+.dropdown-menu {
+    @apply absolute bg-gray-100 rounded shadow-lg overflow-hidden mt-1 opacity-0 z-40 hidden;
+    transition: 0.3s;
+    min-width: 10rem;
+}
+
+.dropdown-menu li a {
+    @apply px-5 py-3 block text-gray-600;
+}
+
+.dropdown-menu li a:hover {
+    @apply bg-gray-200;
+}
+
+.dropdown-menu.active {
+    @apply opacity-100 block;
+}
+
+.dropdown {
+    @apply inline-block text-left relative;
+}
+
+.dropdown-menu-left {
+    @apply left-0 right-auto;
+}
+
+.dropdown-menu-right {
+    @apply right-0 left-auto;
+}

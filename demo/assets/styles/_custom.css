@@ -1,0 +1,4 @@
+html,
+body {
+    @apply h-full bg-gray-100;
+}

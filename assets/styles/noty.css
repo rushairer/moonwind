@@ -1,0 +1,33 @@
+.noty_theme__mars.noty_bar {
+    @apply m-2 overflow-hidden rounded-lg shadow-lg relative;
+}
+
+.noty_theme__mars.noty_bar .noty_body {
+    @apply p-4 text-sm
+}
+
+.noty_theme__mars.noty_bar .noty_buttons {
+    @apply p-2
+}
+
+.noty_theme__mars.noty_type__alert,
+.noty_theme__mars.noty_type__notification {
+    @apply bg-gray-700 text-white;
+}
+
+.noty_theme__mars.noty_type__warning {
+    @apply bg-orange-500 text-white;
+}
+
+.noty_theme__mars.noty_type__error {
+    @apply bg-red-500 text-white;
+}
+
+.noty_theme__mars.noty_type__info,
+.noty_theme__mars.noty_type__information {
+    @apply bg-blue-500 text-white;
+}
+
+.noty_theme__mars.noty_type__success {
+    @apply bg-green-500 text-white;
+}

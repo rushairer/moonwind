@@ -1,0 +1,7 @@
+#nprogress .bar {
+    @apply bg-green-500 !important;
+}
+
+#nprogress .spinner-icon {
+    @apply hidden !important;
+}

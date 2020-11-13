@@ -1,0 +1,5 @@
+.navbar {
+    @apply bg-gray-300 text-gray-800 py-3 px-4;
+}
+
+.active {}

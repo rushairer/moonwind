@@ -1,0 +1,46 @@
+.form-control,
+.input-group {
+    @apply bg-gray-200 appearance-none border border-gray-200 rounded inline-flex overflow-hidden;
+}
+
+.form-control:focus,
+.input-group:focus-within {
+    @apply outline-none bg-white border-blue-300;
+}
+
+.input-group input {
+    @apply appearance-none border-none border-0 outline-none border-gray-200 bg-transparent py-2 px-4 text-gray-700 leading-tight
+}
+
+input.form-control {
+    @apply text-gray-700 leading-tight py-2 px-4;
+}
+
+.form-control.is-valid,
+.input-group.is-valid {
+    @apply border-green-300;
+}
+
+.form-control.is-invalid,
+.input-group.is-invalid {
+    @apply border-red-500;
+}
+
+.form-label {
+    @apply block text-gray-500 font-bold text-left mb-1 pr-4;
+}
+
+.invalid-feedback {
+    @apply text-red-400 text-xs text-left hidden absolute
+}
+
+.form-control.is-invalid+.invalid-feedback,
+.input-group.is-invalid+.invalid-feedback {
+    @apply block
+}
+
+@screen md {
+    .form-label {
+        @apply text-right mb-0;
+    }
+}

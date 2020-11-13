@@ -11,7 +11,7 @@ module.exports = function () {
             fontWeight: theme('fontWeight.medium'),
             fontSize: theme('fontSize.base'),
             lineHeight: theme('lineHeight.normal'),
-            padding: '.375rem .75rem',
+            padding: '.4rem 1.2rem',
             colors: {
                 default: {
                     text: theme('colors.gray.600'),
@@ -29,12 +29,12 @@ module.exports = function () {
                 sm: {
                     fontSize: theme('fontSize.sm'),
                     lineHeight: theme('lineHeight.normal'),
-                    padding: '.25rem .5rem',
+                    padding: '.25rem .75rem',
                 },
                 lg: {
                     fontSize: theme('fontSize.xl'),
                     lineHeight: theme('lineHeight.normal'),
-                    padding: '.5rem 1rem',
+                    padding: '.5rem 1.5rem',
                 }
             }
         }

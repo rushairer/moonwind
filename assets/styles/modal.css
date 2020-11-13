@@ -1,17 +1,25 @@
 .modal_popup {
-    @apply rounded-xl shadow-xl p-0 !important;
+    @apply rounded-xl shadow-2xl p-0 overflow-hidden !important;
 }
 
 .modal_actions {
-    @apply text-right block w-full border-t py-2 px-4 !important;
+    @apply text-right bg-gray-50 block w-full border-t py-2 px-4 border-0 !important;
 }
 
 .modal_content {
-    @apply my-2 mx-4 text-base !important;
+    @apply my-2 mx-4 text-base text-left leading-6 !important;
+}
+
+.swal2-header {
+    @apply pt-4 mx-4 flex-row !important;
+}
+
+.swal2-icon {
+    @apply w-6 h-6 p-0 m-2 mr-4 !important;
 }
 
 .modal_title {
-    @apply text-xl mt-4 mb-2 !important;
+    @apply text-xl mt-4 mb-2 text-black !important;
 }
 
 .modal_icon {
@@ -19,9 +27,22 @@
 }
 
 .modal_confirm_button {
-    @apply inline-block py-2 px-4 bg-red-500 !important;
+    @apply inline-block text-sm py-2 px-4 bg-red-500 !important;
+}
+
+.modal_confirm_button:focus,
+.modal_cancel_button:focus {
+    @apply shadow-none !important;
+}
+
+.modal_confirm_button:hover {
+    @apply bg-red-600 bg-none  !important;
 }
 
 .modal_cancel_button {
-    @apply inline-block py-2 px-4 bg-gray-500 !important;
+    @apply inline-block text-sm text-gray-600 py-2 px-4 bg-white shadow !important;
+}
+
+.modal_cancel_button:hover {
+    @apply bg-gray-50 bg-none !important;
 }

@@ -1,5 +1,5 @@
 .card {
-    @apply border rounded text-gray-700 mb-3;
+    @apply bg-white shadow overflow-hidden rounded-lg m-3;
 }
 
 .card-text {
@@ -12,17 +12,17 @@
 
 .card-header,
 .card-footer {
-    @apply bg-gray-300;
+    @apply bg-gray-50;
 }
 
 .card-header,
 .card-body,
 .card-footer {
-    @apply py-3 px-4;
+    @apply py-4 px-6;
 }
 
 .card-body {
-    @apply pb-4 bg-gray-100;
+    @apply pb-4 bg-white;
 }
 
 .card-footer {

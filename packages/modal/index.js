@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
 
 export default {
-    install(Vue) {
+    install (Vue) {
         const modal = Swal.mixin({
             customClass: {
                 popup: 'modal_popup',

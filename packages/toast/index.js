@@ -2,7 +2,7 @@ import * as toast from 'noty'
 import 'noty/lib/noty.css'
 
 export default {
-    install(Vue) {
+    install (app) {
         const DEFAULT_CONFIG = {
             timeout: 3000,
         }
@@ -83,10 +83,6 @@ export default {
             },
         }
 
-        Object.defineProperties(Vue.prototype, {
-            $toast: {
-                get: () => toastObj
-            }
-        })
+        app.config.globalProperties.$toast = toastObj
     }
 }

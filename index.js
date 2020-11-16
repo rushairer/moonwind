@@ -17,18 +17,18 @@ const plugins = [
     Modal,
 ]
 
-const install = function (Vue, options) {
+const install = function (app, options) {
     components.forEach(component => {
-        Vue.component(component.name, component)
+        app.component(component.name, component)
     })
 
     plugins.forEach(plugin => {
-        Vue.use(plugin, options)
+        app.use(plugin, options)
     })
 
     Ripple.color = 'rgba(255, 255, 255, 0.35)'
     Ripple.zIndex = 55
-    Vue.directive('ripple', Ripple)
+    app.directive('ripple', Ripple)
 }
 
 export default {

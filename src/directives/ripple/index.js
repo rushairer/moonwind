@@ -4,7 +4,7 @@ https://github.com/PygmySlowLoris/vue-ripple-directive
 */
 
 var Ripple = {
-    bind: function (el, binding) {
+    mounted: function (el, binding) {
 
         // Default values.
         var props = {
@@ -21,7 +21,7 @@ var Ripple = {
         var bg = binding.value || Ripple.color || 'rgba(0, 0, 0, 0.35)'
         var zIndex = Ripple.zIndex || '9999'
 
-        function rippler(event, el) {
+        function rippler (event, el) {
             var target = el
             // Get border to avoid offsetting on ripple container position
             var targetBorder = parseInt((getComputedStyle(target).borderWidth).replace('px', ''))
@@ -99,7 +99,7 @@ var Ripple = {
                 ripple.style.marginTop = dy - radius + 'px'
             }, 0)
 
-            function clearRipple() {
+            function clearRipple () {
                 setTimeout(function () {
                     ripple.style.backgroundColor = 'rgba(0, 0, 0, 0)'
                 }, 30)
@@ -142,7 +142,7 @@ var Ripple = {
     }
 }
 
-function setProps(modifiers, props) {
+function setProps (modifiers, props) {
     modifiers.forEach(function (item) {
         if (isNaN(Number(item)))
             props.event = item

@@ -1,4 +1,4 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import Moonwind from '../index'
@@ -6,14 +6,12 @@ import Moonwind from '../index'
 import './assets/styles/ui.css'
 import '../assets/styles/moonwind.css'
 
-Vue.config.productionTip = false
-
-Vue.use(Moonwind, {
+const app = createApp({
+    ...App,
+})
+app.use(router)
+app.use(Moonwind, {
     router: router
 })
 
-const vm = new Vue({
-    router,
-    render: h => h(App)
-})
-vm.$mount('#app')
+app.mount('#app')

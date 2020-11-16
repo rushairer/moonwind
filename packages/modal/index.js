@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
 
 export default {
-    install (Vue) {
+    install (app) {
         const modal = Swal.mixin({
             customClass: {
                 popup: 'modal_popup',
@@ -16,10 +16,6 @@ export default {
             heightAuto: false,
         })
 
-        Object.defineProperties(Vue.prototype, {
-            $modal: {
-                get: () => modal
-            }
-        })
+        app.config.globalProperties.$modal = modal
     }
 }

@@ -1,5 +1,3 @@
 <template>
-    <transition>
-        <router-view />
-    </transition>
+    <router-view />
 </template>

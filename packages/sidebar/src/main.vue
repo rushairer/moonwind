@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar">
-        <div class="logo iconfont icon-arm text-3xl" />
+        <div class="logo iconfont icon-logo text-3xl" />
         <ul class="sm:with-title">
             <li v-for="item in menu" :key="item.index">
                 <template v-if="item.route">

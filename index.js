@@ -8,13 +8,13 @@ import Ripple from './src/directives/ripple'
 
 const components = [
     Card,
+    Modal,
     Sidebar,
 ]
 
 const plugins = [
     Progress,
     Toast,
-    Modal,
 ]
 
 const install = function (app, options) {

@@ -1,6 +1,6 @@
 {
     "name": "moonwind",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "author": "aben",
     "scripts": {
         "demo": "vue-cli-service serve demo/main.js",
@@ -11,8 +11,7 @@
         "core-js": "^3.7.0",
         "noty": "^3.2.0-beta",
         "nprogress": "^0.2.0",
-        "path": "^0.12.7",
-        "sweetalert2": "^9.17.2"
+        "path": "^0.12.7"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^4.5.8",
